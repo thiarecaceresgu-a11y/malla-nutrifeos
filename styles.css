@@ -1,13 +1,13 @@
 body {
   font-family: "Poppins", "Segoe UI", sans-serif;
-  background: #fdeff3;
+  background: #eaf6ff; /* celeste muy suave */
   margin: 0;
   padding: 30px;
   text-align: center;
 }
 
 h1 {
-  color: #c2185b;
+  color: #1565c0; /* azul intenso */
   margin-bottom: 40px;
 }
 
@@ -19,8 +19,8 @@ h1 {
 }
 
 .semestre {
-  background: #fde1ea;
-  border: 2px solid #f8bbd0;
+  background: #dbeeff; /* celeste pastel */
+  border: 2px solid #bbdefb;
   border-radius: 25px;
   padding: 20px 15px;
   width: 230px;
@@ -28,20 +28,20 @@ h1 {
 
 .semestre h2 {
   font-size: 16px;
-  color: #ad1457;
+  color: #0d47a1; /* azul profundo */
   margin-bottom: 15px;
 }
 
-/* 🩷 DESBLOQUEADO */
+/* 🩵 DESBLOQUEADO */
 .ramo {
-  background: #f8bbd0;
-  border: 2px dashed #f48fb1;
+  background: #bbdefb; /* celeste claro */
+  border: 2px dashed #90caf9;
   margin: 12px 0;
   padding: 10px;
   border-radius: 14px;
   font-size: 14px;
   font-weight: 500;
-  color: #c2185b;
+  color: #1565c0;
   cursor: pointer;
   transition: transform 0.15s ease;
 }
@@ -50,15 +50,15 @@ h1 {
   transform: scale(1.03);
 }
 
-/* 💜 APROBADO */
+/* 🔵 APROBADO */
 .ramo.aprobado {
-  background: #e1bee7;
-  border-color: #ab47bc;
-  color: #6a1b9a;
+  background: #b3e5fc;
+  border-color: #0288d1;
+  color: #01579b;
   text-decoration: line-through;
 }
 
-/* 🔒 BLOQUEADO */
+/* 🔒 BLOQUEADO (SIN CAMBIOS) */
 .ramo.bloqueado {
   background: #eeeeee;
   border-color: #d0d0d0;
