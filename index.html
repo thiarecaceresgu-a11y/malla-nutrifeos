@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva de Nutrición</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Nutrición y Dietética 🦦</h1>
+
+<div class="malla">
+
+  <!-- SEMESTRE 1 -->
+  <div class="semestre">
+    <h2>Semestre 1</h2>
+    <div class="ramo" data-id="precalculo">Precálculo</div>
+    <div class="ramo" data-id="quimica">Química</div>
+    <div class="ramo" data-id="biocel">Biología de la célula</div>
+    <div class="ramo" data-id="morfo">Morfología humana</div>
+    <div class="ramo" data-id="alimentos">Alimentos</div>
+    <div class="ramo" data-id="intro">Introducción a la nutrición</div>
+  </div>
+
+  <!-- SEMESTRE 2 -->
+  <div class="semestre">
+    <h2>Semestre 2</h2>
+    <div class="ramo bloqueado" data-id="fisica" data-prereq="precalculo">Física para nutrición</div>
+    <div class="ramo bloqueado" data-id="bioquimica" data-prereq="quimica">Bioquímica general para nutrición</div>
+    <div class="ramo bloqueado" data-id="fisiologia" data-prereq="biocel,morfo">Fisiología</div>
+    <div class="ramo bloqueado" data-id="cienciaalimentos" data-prereq="quimica,alimentos">Ciencia de los alimentos</div>
+    <div class="ramo bloqueado" data-id="tecnicas" data-prereq="alimentos">Técnicas dietéticas y planificación alimentaria</div>
+  </div>
+
+  <!-- SEMESTRE 3 -->
+  <div class="semestre">
+    <h2>Semestre 3</h2>
+    <div class="ramo bloqueado" data-id="bioestadistica" data-prereq="precalculo">Bioestadística</div>
+    <div class="ramo bloqueado" data-id="nutricionbasica" data-prereq="fisiologia,bioquimica">Nutrición básica</div>
+    <div class="ramo bloqueado" data-id="fisiopatologiageneral" data-prereq="fisiologia">Fisiopatología general</div>
+    <div class="ramo bloqueado" data-id="microbiologia" data-prereq="cienciaalimentos,alimentos">Microbiología e higiene de los alimentos</div>
+  </div>
+
+  <!-- SEMESTRE 4 -->
+  <div class="semestre">
+    <h2>Semestre 4</h2>
+    <div class="ramo bloqueado" data-id="integradopediatria" data-prereq="nutricionbasica,fisiopatologiageneral">Integrado de Nutrición Humana Pediátrica</div>
+    <div class="ramo bloqueado" data-id="saludpublica" data-prereq="bioestadistica">Salud Pública y Epidemiología Nutricional</div>
+    <div class="ramo bloqueado" data-id="fisiopatologianutricional" data-prereq="fisiopatologiageneral">Fisiopatología Nutricional</div>
+    <div class="ramo bloqueado" data-id="farmacologia" data-prereq="fisiopatologiageneral,cienciaalimentos">Farmacología para Nutrición</div>
+    <div class="ramo bloqueado" data-id="nutriciondeporte" data-prereq="nutricionbasica">Nutrición y Deporte</div>
+    <div class="ramo bloqueado" data-id="conductaalimentaria" data-prereq="nutricionbasica">Conducta Alimentaria</div>
+  </div>
+
+  <!-- SEMESTRE 5 -->
+  <div class="semestre">
+    <h2>Semestre 5</h2>
+    <div class="ramo bloqueado" data-id="integradoadulto" data-prereq="nutricionbasica,microbiologia">Integrado de Nutrición Humana del Adulto</div>
+    <div class="ramo bloqueado" data-id="educacionalimentaria" data-prereq="conductaalimentaria">Educación Alimentaria</div>
+    <div class="ramo bloqueado" data-id="promocionprevencion" data-prereq="saludpublica">Promoción, Prevención e Intervenciones Nutricionales</div>
+    <div class="ramo bloqueado" data-id="integradoclinicogeneral" data-prereq="nutricionbasica,microbiologia,fisiopatologianutricional">Integrado de Nutrición Clínica General</div>
+  </div>
+
+  <!-- SEMESTRE 6 -->
+  <div class="semestre">
+    <h2>Semestre 6</h2>
+    <div class="ramo bloqueado" data-id="procesamientoalimentos" data-prereq="microbiologia">Procesamiento de Alimentos</div>
+    <div class="ramo bloqueado" data-id="etica" data-prereq="integradoadulto,integradoclinicogeneral">Ética para Nutrición</div>
+    <div class="ramo bloqueado" data-id="integradoclinicoadulto" data-prereq="educacionalimentaria,integradoclinicogeneral">Integrado de Nutrición Clínica Adulto</div>
+    <div class="ramo bloqueado" data-id="gestionorganizaciones" data-prereq="saludpublica">Gestión en Organizaciones de Salud</div>
+  </div>
+
+  <!-- SEMESTRE 7 -->
+  <div class="semestre">
+    <h2>Semestre 7</h2>
+    <div class="ramo bloqueado" data-id="integradopersonamayor" data-prereq="integradoadulto,educacionalimentaria">Integrado de Nutrición Humana de la Persona Mayor</div>
+    <div class="ramo bloqueado" data-id="integradoclinicopediatrico" data-prereq="integradopediatria,educacionalimentaria,integradoclinicogeneral">Integrado de Nutrición Clínica Pediátrica</div>
+    <div class="ramo bloqueado" data-id="administracionservicios" data-prereq="microbiologia,gestionorganizaciones">Administración y Gestión de Servicios de Alimentación</div>
+    <div class="ramo bloqueado" data-id="investigacion1" data-prereq="bioestadistica,etica">Unidad de Investigación en Nutrición I</div>
+  </div>
+
+  <!-- SEMESTRE 8 -->
+  <div class="semestre">
+    <h2>Semestre 8</h2>
+    <div class="ramo bloqueado" data-id="nutricioncomunitaria" data-prereq="educacionalimentaria,promocionprevencion,integradoclinicoadulto,integradoclinicopediatrico,gestionorganizaciones">Nutrición Comunitaria</div>
+    <div class="ramo bloqueado" data-id="pasantias" data-prereq="etica,integradoclinicoadulto,administracionservicios,integradoclinicopediatrico">Pasantías Profesionales en Nutrición</div>
+    <div class="ramo bloqueado" data-id="investigacion2" data-prereq="investigacion1">Unidad de Investigación en Nutrición II</div>
+  </div>
+
+  <!-- SEMESTRE 9 -->
+  <div class="semestre">
+    <h2>Semestre 9</h2>
+    <div class="ramo bloqueado" data-id="internadoadulto" data-prereq="nutricioncomunitaria,pasantias,investigacion2">Internado Clínico Adulto</div>
+    <div class="ramo bloqueado" data-id="internadopediatrico" data-prereq="nutricioncomunitaria,pasantias,investigacion2">Internado Clínico Pediátrico</div>
+    <div class="ramo bloqueado" data-id="internadodeportivo" data-prereq="nutricioncomunitaria,pasantias,investigacion2">Internado Nutrición Deportiva</div>
+  </div>
+
+  <!-- SEMESTRE 10 -->
+  <div class="semestre">
+    <h2>Semestre 10</h2>
+    <div class="ramo bloqueado" data-id="internadocomunitario" data-prereq="nutricioncomunitaria,pasantias,investigacion2">Internado Nutrición Comunitaria</div>
+    <div class="ramo bloqueado" data-id="internadocolectiva" data-prereq="nutricioncomunitaria,pasantias,investigacion2">Internado Alimentación Colectiva</div>
+    <div class="ramo bloqueado" data-id="internadoelectivo" data-prereq="nutricioncomunitaria,pasantias,investigacion2">Internado Electivo</div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
