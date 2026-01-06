@@ -1,13 +1,13 @@
 body {
   font-family: "Poppins", "Segoe UI", sans-serif;
-  background: #eaf6ff; /* celeste muy suave */
+  background: #f2f9ff;
   margin: 0;
   padding: 30px;
   text-align: center;
 }
 
 h1 {
-  color: #1565c0; /* azul intenso */
+  color: #1e88e5;
   margin-bottom: 40px;
 }
 
@@ -19,7 +19,7 @@ h1 {
 }
 
 .semestre {
-  background: #dbeeff; /* celeste pastel */
+  background: #e3f2fd;
   border: 2px solid #bbdefb;
   border-radius: 25px;
   padding: 20px 15px;
@@ -28,34 +28,36 @@ h1 {
 
 .semestre h2 {
   font-size: 16px;
-  color: #0d47a1; /* azul profundo */
+  color: #1565c0;
   margin-bottom: 15px;
 }
 
 /* 🩵 DESBLOQUEADO */
 .ramo {
-  background: #bbdefb; /* celeste claro */
-  border: 2px dashed #90caf9;
+  background: #cfefff;              /* celeste claro */
+  border: 2px dashed #81d4fa;
   margin: 12px 0;
   padding: 10px;
   border-radius: 14px;
   font-size: 14px;
-  font-weight: 500;
-  color: #1565c0;
+  font-weight: 600;
+  color: #0288d1;                   /* celeste notorio */
   cursor: pointer;
-  transition: transform 0.15s ease;
+  transition: all 0.2s ease;
 }
 
 .ramo:not(.bloqueado):hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
+  box-shadow: 0 6px 12px rgba(2, 136, 209, 0.25);
 }
 
-/* 🔵 APROBADO */
+/* 🔵 APROBADO (al presionar) */
 .ramo.aprobado {
-  background: #b3e5fc;
-  border-color: #0288d1;
-  color: #01579b;
+  background: #64b5f6;              /* azul medio */
+  border-color: #1e88e5;
+  color: #0d47a1;                   /* azul notorio */
   text-decoration: line-through;
+  font-weight: 600;
 }
 
 /* 🔒 BLOQUEADO (SIN CAMBIOS) */
@@ -71,4 +73,5 @@ h1 {
     width: 90%;
   }
 }
+
 
